@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const itemId = urlParams.get('id');
-    
+
     console.log('Item ID:', itemId); // Debugging line
-    
+
     if (itemId) {
         fetch('items.json')
             .then(response => {
